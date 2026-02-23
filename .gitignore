@@ -1,0 +1,42 @@
+# ── Environment & secrets ─────────────────────────────────────────────────────
+.env
+*.env
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Virtual environments ──────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+ENV/
+
+# ── Django ────────────────────────────────────────────────────────────────────
+db.sqlite3
+*.sqlite3
+media/
+documents/
+staticfiles/
+*.log
+
+# ── IDE / OS ──────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.DS_Store
+Thumbs.db
+*.Zone.Identifier
+
+# ── Test / scratch images ─────────────────────────────────────────────────────
+test_image.jpg
+
+# ── Docker ────────────────────────────────────────────────────────────────────
+*.override.yml
