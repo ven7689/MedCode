@@ -120,11 +120,18 @@ Poll for results. Status transitions: `pending → processing → completed | fa
 
 ## Running Tests
 
+### Unit Tests
 ```bash
 python manage.py test coder_app
 ```
-
 Tests use mocks — no real API calls or external services needed.
+
+### Live E2E Testing (Real Images + VLM)
+To run a direct test of the VLM logic against real images in the `media/` folder (bypassing the HTTP server):
+```bash
+python live_test.py
+```
+This requires an active virtual environment and a valid `OPENROUTER_API_KEY` in your `.env`.
 
 ---
 
